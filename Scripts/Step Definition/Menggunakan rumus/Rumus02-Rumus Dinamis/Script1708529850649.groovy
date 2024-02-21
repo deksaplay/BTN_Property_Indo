@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -19,6 +20,10 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
 import com.kms.katalon.core.testdata.ExcelData as ExcelData
 import com.kms.katalon.core.testdata.reader.SheetPOI as SheetPOI
+import com.kms.katalon.core.testdata.TestDataFactory
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.By
 
 // Mengambil data dari file Excel
 TestData testData = TestDataFactory.findTestData('Data Excel')
@@ -57,19 +62,26 @@ WebUI.click(findTestObject('Page_Hitung Harga Properti Maksimal  BTN Properti  I
 
   // Dapatkan hasil dari website
     def hasilDariWebsite = WebUI.getText(findTestObject('Object Repository/Page_Hitung Harga Properti Maksimal  BTN Properti  Indonesia/Verify/h3_harga'))
-}
+	
+	def penghasilanNumeric = Double.parseDouble(penghasilan)
+	def pengeluaranNumeric = Double.parseDouble(pengeluaran)
+	def jangkaWaktuNumeric = Integer.parseInt(jangkaWaktu)
+	
+	def hasilKalkulasi = (penghasilanNumeric - pengeluaranNumeric) * jangkaWaktuNumeric / 3
     // Hitung harga properti lokal
-	def hasilKalkulasi = (penghasilan - pengeluaran) * jangkaWaktu / 3
+	//def hasilKalkulasi = (penghasilan - pengeluaran) * jangkaWaktu / 3
 
     // Bandingkan hasil
-    WebUI.comment("Data ke-" + i + ": Penghasilan = " + penghasilan + ", Pengeluaran = " + pengeluaran + ", Jangka Waktu = " + jangkaWaktu)
+    WebUI.comment("Data ke-" + i + ": Penghasilan = " + penghasilanNumeric + ", Pengeluaran = " + pengeluaranNumeric + ", Jangka Waktu = " + jangkaWaktuNumeric)
     WebUI.comment("Hasil dari website: " + hasilDariWebsite)
     WebUI.comment("Hasil Kalkulasi Lokal: " + hasilKalkulasi)
 
     // Bandingkan hasil dari website dengan hasil kalkulasi lokal
-    assert Double.parseDouble(hasilDariWebsite) == hasilKalkulasi
-
+	
+   // assert Double.parseDouble(hasilDariWebsite) == hasilKalkulasi
+	//def intValue = Integer.parseInt(stringValue)
+	assert hasilDariWebsite == hasilKalkulasi
     // Tutup browser
     WebUI.closeBrowser()
-
+}
 
