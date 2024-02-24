@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2 - Positif_ BTN_Data_binding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>489bb822-778b-4aac-be1a-3a9020432c2b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>436fa101-1c55-4492-9c99-49ca17285e5a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e96e0fec-802b-42b1-b11f-cc00325dda38</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1597a2df-2a33-4818-8edb-aeca156b7e5c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>436fa101-1c55-4492-9c99-49ca17285e5a</id>
+      <masked>false</masked>
+      <name>penghasilan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e96e0fec-802b-42b1-b11f-cc00325dda38</id>
+      <masked>false</masked>
+      <name>pengeluaran</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1597a2df-2a33-4818-8edb-aeca156b7e5c</id>
+      <masked>false</masked>
+      <name>jangkaWaktu</name>
+   </variable>
+</TestCaseEntity>

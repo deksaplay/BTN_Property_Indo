@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC2-Negatif Data Binding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>151340a3-98e3-4426-8762-1065c5d1714f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>14fd7b23-9e6b-4aa8-8124-5b9d98d6c50a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ba025b88-1f37-406e-99a1-72052b992c47</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>789d840b-444e-48aa-849d-b5d1eadf74cd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>14fd7b23-9e6b-4aa8-8124-5b9d98d6c50a</id>
+      <masked>false</masked>
+      <name>penghasilan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ba025b88-1f37-406e-99a1-72052b992c47</id>
+      <masked>false</masked>
+      <name>pengeluaran</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>789d840b-444e-48aa-849d-b5d1eadf74cd</id>
+      <masked>false</masked>
+      <name>jangkaWaktu</name>
+   </variable>
+</TestCaseEntity>

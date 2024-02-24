@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01-Properti_BTN_Rumus</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>828a66fb-87aa-4c7b-a985-b0d6dd9135e1</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c5591d81-b7a5-4699-af49-d985b8df51f1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5edf4aa4-646f-4724-a4c5-70990936b113</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c87700a1-68e7-4509-ad1e-00b100a9b613</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'10000000'</defaultValue>
+      <description></description>
+      <id>c5591d81-b7a5-4699-af49-d985b8df51f1</id>
+      <masked>false</masked>
+      <name>penghasilan</name>
+   </variable>
+   <variable>
+      <defaultValue>'100000'</defaultValue>
+      <description></description>
+      <id>5edf4aa4-646f-4724-a4c5-70990936b113</id>
+      <masked>false</masked>
+      <name>pengeluaran</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description></description>
+      <id>c87700a1-68e7-4509-ad1e-00b100a9b613</id>
+      <masked>false</masked>
+      <name>jangkaWaktu</name>
+   </variable>
+</TestCaseEntity>

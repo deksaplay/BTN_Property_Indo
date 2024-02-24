@@ -24,7 +24,7 @@ import com.kms.katalon.core.context.TestSuiteContext
 
 import com.kms.katalon.core.util.KeywordUtil
 
- class Hook_Listener {
+ /*class Hook_Listener {
 	def openBrowser() {
 		WebUI.openBrowser('https://www.btnproperti.co.id/tools/hitung-harga-properti/')
 		WebUI.maximizeWindow()
@@ -56,4 +56,4 @@ import com.kms.katalon.core.util.KeywordUtil
 	def AfterTestSuite(TestSuiteContext testSuiteContext) {
 		KeywordUtil.logInfo('Test Suite: ' + testSuiteContext.getTestSuiteId() + ' | ' + testSuiteContext.getStatus())
 	}
-}
+}*/

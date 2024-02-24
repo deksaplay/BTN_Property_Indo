@@ -6,31 +6,35 @@
    <elementGuidId>5985b367-0603-4b2c-8469-a5b1c856bc34</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h3</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='harga_hasil']/h3</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h3</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>h3</value>
-      <webElementGuid>355fb30e-bdc8-4cb4-ba0f-9eaf85161078</webElementGuid>
+      <webElementGuid>92fb9de9-88e5-496c-b5c6-6fe854776549</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Rp 3.269.351.405.340</value>
-      <webElementGuid>36571b87-e6d9-4cb6-a6b7-4680a1e2b089</webElementGuid>
+      <webElementGuid>bd2d5362-5740-476a-9f49-f1c0f735735a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;harga_hasil&quot;)/h3[1]</value>
-      <webElementGuid>3ee619ba-af40-4fb6-a033-55462a80fa40</webElementGuid>
+      <webElementGuid>46914369-439c-48fa-8780-4c41ce3f6008</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='harga_hasil']/h3</value>
-      <webElementGuid>54f23bf6-17ba-4b09-99f4-2df9f3b5b750</webElementGuid>
+      <webElementGuid>e86ee6d9-f5e7-4c0e-b3e5-fe665a9ddc98</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Harga Properti Maksimal Kamu'])[1]/following::h3[1]</value>
-      <webElementGuid>459835b7-712e-448e-995a-3d3aca3e5a54</webElementGuid>
+      <webElementGuid>098bffda-55f2-4d8c-981f-eda46f7a46c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Hitung Ulang'])[1]/following::h3[1]</value>
-      <webElementGuid>701d1945-c09a-41d2-abee-744514365ffa</webElementGuid>
+      <webElementGuid>46038c23-a1cf-4024-86f4-6d278a738302</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Lokasi'])[1]/preceding::h3[1]</value>
-      <webElementGuid>ff6216a0-81f3-4295-95cd-37bc43e4ab14</webElementGuid>
+      <webElementGuid>01bddd1d-98be-420e-bb27-47903a057fbf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CARI PROPERTI'])[1]/preceding::h3[1]</value>
-      <webElementGuid>a5b6cb45-2df0-4c93-b91c-019691a2f7a1</webElementGuid>
+      <webElementGuid>7a780454-c779-4e25-9b1d-5548a737dd88</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h3</value>
-      <webElementGuid>c2da25c0-4361-4c1c-80ac-a2f1d60243bd</webElementGuid>
+      <webElementGuid>a37c72c3-a613-4cb7-9f19-dd230f2c6733</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +98,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h3[(text() = 'Rp 3.269.351.405.340' or . = 'Rp 3.269.351.405.340')]</value>
-      <webElementGuid>7373d587-a07c-4229-9d3e-002b41a9c1ba</webElementGuid>
+      <webElementGuid>624e9592-6ea8-4c20-a28a-3078287b87e5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
