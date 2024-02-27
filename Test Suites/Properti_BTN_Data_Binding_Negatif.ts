@@ -15,7 +15,7 @@
       <guid>895fdc63-0ddf-4703-9236-8cd327985ae9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Negatif/TC2-Negatif Data Binding</testCaseId>
+      <testCaseId>Test Cases/Negatif/TC2-Negatif Data Binding BTN</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>f04b6df8-d20d-49ce-8134-d137a07d3556</id>

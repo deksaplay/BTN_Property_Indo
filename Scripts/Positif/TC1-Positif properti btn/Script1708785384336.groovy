@@ -87,5 +87,38 @@ for (int i = 1; i <= rowCount; i++) {
 	
 	WebUI.verifyElementPresent(findTestObject('Page_Hitung Harga Properti Maksimal  BTN Properti  Indonesia/Verify/h3_harga'),
 		2)
+	def penghasilanNumeric = Double.parseDouble(penghasilan)
+	def pengeluaranNumeric = Double.parseDouble(pengeluaran)
+	
+	//ekspresi yang digunakan untuk menghapus semua karakter non-digit dari string jangkaWaktu dan menyimpan hasilnya dalam variabel angka_bulan
+	
+	String angka_bulan = jangkaWaktu.replaceAll("[^0-9]", "")
+	//sintaks tersebut mengonversi nilai yang disimpan dalam variabel angka_bulan (yang sebelumnya dihasilkan dari operasi replaceAll untuk menghapus karakter non-digit dari string)
+	// menjadi tipe data integer, dan hasilnya disimpan dalam variabel biljangkaWaktu.
+	def biljangkaWaktuNumeric = Integer.parseInt(angka_bulan)
+	
+	
+	def bilhasilKalkulasiNumeric = (penghasilanNumeric - pengeluaranNumeric) * (biljangkaWaktuNumeric * 12) / 3
+	println(bilhasilKalkulasiNumeric)
+	//sintaks tersebut memformat nilai yang disimpan dalam variabel bilhasilKalkulasi menjadi sebuah string dengan menggunakan pola format yang menghasilkan bilangan bulat tanpa desimal,
+	String hasilKalkulasiNumeric = String.format ("%.0f", bilhasilKalkulasiNumeric)
+	println(hasilKalkulasiNumeric)
+	
+	def bilDariWebsite = WebUI.getText(findTestObject('Object Repository/Page_Hitung Harga Properti Maksimal  BTN Properti  Indonesia/Verify/h3_harga'))
+	//ekspresi tersebut akan menghapus semua karakter non-digit dari string bilDariWebsite dan menyimpan hasilnya dalam variabel hasilDariWebsite. Sebagai contoh, jika bilDariWebsite adalah
+	//"Rp. 1.250.000", setelah operasi tersebut, hasilDariWebsite akan berisi "1250000".
+	String hasilDariWebsiteNumeric = bilDariWebsite.replaceAll("[^0-9]", "")
+	
+	// Bandingkan hasil
+	WebUI.comment("Data ke-" + i + ": Penghasilan = " + penghasilanNumeric + ", Pengeluaran = " + pengeluaranNumeric + ", Jangka Waktu = " + biljangkaWaktuNumeric)
+	WebUI.comment("Hasil dari website: " + hasilDariWebsiteNumeric)
+	WebUI.comment("Hasil Kalkulasi Lokal: " + hasilKalkulasiNumeric)
+
+	// Bandingkan hasil dari website dengan hasil kalkulasi lokal
+	
+   assert hasilDariWebsiteNumeric == hasilKalkulasiNumeric
+
+	  
+WebUI.closeBrowser()
 }
 

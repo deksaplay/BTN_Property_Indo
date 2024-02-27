@@ -76,5 +76,8 @@ for (int i = 1; i <= rowCount; i++) {
     WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Hitung Harga Properti Maksimal  BTN Properti  Indonesia/Verify/verify_error'), 
         2)
 	WebUI.takeScreenshot()
+	WebUI.closeBrowser()
+	
+	
 }
 
